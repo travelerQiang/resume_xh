@@ -21,18 +21,18 @@
     },
     data() {
       return {
-        templateList: [
-          {
-            icon: 'a.png',
-            address: '/nested/menu1/menu1-1/one'
-          }, {
-            icon: 'b.png',
-            address: '/nested/menu1/menu1-1/two'
-          }, {
-            icon: 'c.png',
-            address: '/nested/menu1/menu1-1/three'
-          }
-        ]
+        // templateList: [
+        //   {
+        //     icon: 'a.png',
+        //     address: '/nested/menu1/menu1-1/one'
+        //   }, {
+        //     icon: 'b.png',
+        //     address: '/nested/menu1/menu1-1/two'
+        //   }, {
+        //     icon: 'c.png',
+        //     address: '/nested/menu1/menu1-1/three'
+        //   }
+        // ]
       };
     },
     methods: {

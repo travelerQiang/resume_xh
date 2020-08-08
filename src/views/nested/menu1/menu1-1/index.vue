@@ -1,9 +1,7 @@
 <template>
   <div id="app">
     <Aside class="aside"></Aside>
-      <div id="main">
         <one></one>
-      </div>
   </div>
 </template>
 
@@ -29,20 +27,9 @@
     -webkit-font-smoothing: antialiased
     -moz-osx-font-smoothing: grayscale
     text-align: center
-    padding :30px
     .aside
       background: #00c091
-      top:80px
-      left:1420px
-    .main
-      float: left
-      background-color: #ffffff
-      position: relative
-      left: 220px
-      width: 880px
-      height: 1377px
-      margin-top: 30px
-      margin-left: 10px
-      box-shadow: 3px 3px 15px gray
+      top:40%
+      left:86%
 </style>
 

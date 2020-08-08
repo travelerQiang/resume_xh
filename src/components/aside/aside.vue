@@ -11,10 +11,10 @@
       </a>
     </div>
     <ul class="manager">
-      <li class="manager-item" @click="templateSwitch">
-        <i class="icon model"></i>
-        <a class="text" href="javascript:void(0);">模板切换</a>
-      </li>
+<!--      <li class="manager-item" @click="templateSwitch">-->
+<!--        <i class="icon model"></i>-->
+<!--        <a class="text" href="javascript:void(0);">模板切换</a>-->
+<!--      </li>-->
       <li class="manager-item" @click="styleSetting">
         <i class="icon style"></i>
         <a class="text" href="javascript:void(0);">风格设置</a>
@@ -27,16 +27,18 @@
                   @colorPickerHide="colorPickerHideListener"></color-picker>
 
     <!--模板切换-->
-    <template-switch v-show="false" id="templateSwitch"
-                     @templateSwitchHide="templateSwitchHideListener"></template-switch>
+<!--    <template-switch v-show="false" id="templateSwitch"-->
+<!--                     @templateSwitchHide="templateSwitchHideListener">-->
+
+<!--    </template-switch>-->
 
   </div>
 </template>
 
 <script type="text/ecmascript-6">
 
-  import colorPicker from '../colorPicker/colorPicker.vue';
-  import templateSwitch from '../templateSwitch/templateSwitch.vue';
+  import colorPicker from '../colorPicker/colorPicker.vue'
+  import templateSwitch from '../templateSwitch/templateSwitch.vue'
   export default {
     components: {
       colorPicker,
@@ -62,21 +64,21 @@
           offset: ['32px', '0']
         });
       },
-      // 模板切换
-      templateSwitch() {
-        this.dialogIndex = this.$layer.open({
-          type: 1,
-          title: 0,
-          content: this.$jquery('#templateSwitch'),
-          anim: 2,
-          btn: 0,
-          move: 0,
-          closeBtn: 0,
-          shade: false,
-          area: ['335px', '100%'],
-          offset: ['32px', '0']
-        });
-      },
+      // // 模板切换
+      // templateSwitch() {
+      //   this.dialogIndex = this.$layer.open({
+      //     type: 1,
+      //     title: 0,
+      //     content: this.$jquery('#templateSwitch'),
+      //     anim: 2,
+      //     btn: 0,
+      //     move: 0,
+      //     closeBtn: 0,
+      //     shade: false,
+      //     area: ['335px', '100%'],
+      //     offset: ['32px', '0']
+      //   });
+      // },
       // 颜色选择
       colorPickedListener(color) {
         console.log(`最终的选择：${color}`);
@@ -111,10 +113,8 @@
   .aside
     position fixed
     z-index: 999
-    left: 0
-    top: 0
-    width: 220px
-    height: 100%
+    width: 210px
+    height: 60%
     border-right: 1px solid #2bd8ae
     .publish
       width: 219px
@@ -169,4 +169,5 @@
         padding-left: 7px
         text-decoration: none
         color: #ffffff
+
 </style>

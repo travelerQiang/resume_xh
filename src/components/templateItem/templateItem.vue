@@ -36,7 +36,7 @@
   .template-item
     float: left
     width: 136px
-    height: 192px
+    height: 190px
     padding: 20px 0 0 20px
     .template-wrapper
       display: block
