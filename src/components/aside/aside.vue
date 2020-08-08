@@ -10,21 +10,21 @@
         <span class="text">PNG下载</span>
       </a>
     </div>
-    <ul class="manager">
+<!--    <ul class="manager">-->
 <!--      <li class="manager-item" @click="templateSwitch">-->
 <!--        <i class="icon model"></i>-->
 <!--        <a class="text" href="javascript:void(0);">模板切换</a>-->
 <!--      </li>-->
-      <li class="manager-item" @click="styleSetting">
-        <i class="icon style"></i>
-        <a class="text" href="javascript:void(0);">风格设置</a>
-      </li>
-    </ul>
+<!--      <li class="manager-item" @click="styleSetting">-->
+<!--        <i class="icon style"></i>-->
+<!--        <a class="text" href="javascript:void(0);">风格设置</a>-->
+<!--      </li>-->
+<!--    </ul>-->
 
     <!--颜色选择器-->
-    <color-picker v-show="false" id="colorPicker"
-                  @colorPicked="colorPickedListener"
-                  @colorPickerHide="colorPickerHideListener"></color-picker>
+<!--    <color-picker v-show="false" id="colorPicker"-->
+<!--                  @colorPicked="colorPickedListener"-->
+<!--                  @colorPickerHide="colorPickerHideListener"></color-picker>-->
 
     <!--模板切换-->
 <!--    <template-switch v-show="false" id="templateSwitch"-->
@@ -114,7 +114,7 @@
     position fixed
     z-index: 999
     width: 210px
-    height: 60%
+    height: 40%
     border-right: 1px solid #2bd8ae
     .publish
       width: 219px
