@@ -9,7 +9,6 @@ import locale from 'element-ui/lib/locale/lang/en' // lang i18n
 import '@/styles/index.scss' // global css
 import '@/icons' // icon
 import '@/permission' // permission control
-import  '@/assets/css/reset.css'
 /**
  * If you don't want to use mock-server
  * you want to use MockJs for mock api
@@ -29,7 +28,12 @@ import common from '@/common/common.styl';
 import layeyCss from '../static/layer/theme/default/layer.css'
 import jquery from '../static/jquery.js'
 import layer from '../static/layer/layer.js'
+import request from '@/utils/request'
+import MyServiceHttp from "@/plugins/http";
+//适用vue插件
+Vue.use(MyServiceHttp)
 
+Vue.prototype.$request = request;
 Vue.config.productionTip = false;
 Vue.prototype.$layer = layer;
 Vue.prototype.$jquery = jquery;
