@@ -1,5 +1,5 @@
 <template>
-  <div class="wrapper clearfix" id="pageDefault">
+  <div class="wrapper" id="pageDefault">
     <div class="aside-left" ref="asideLeftHook">
       <!--用户头像-->
       <dash-parent>
@@ -222,18 +222,17 @@
     }
   };
 </script>
-
 <style lang="stylus" rel="stylesheet/stylus">
-
   .wrapper
     width: 100%
     height: 100%
     color: #000
     overflow: hidden
+    margin :-5px 0 0 0
     background-color: #ffffff
     .aside-left
       float: left
-      width: 270px
+      width: 280px
       height: 100%
       color: #ffffff
       background-color: #254665

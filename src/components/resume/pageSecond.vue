@@ -203,6 +203,7 @@
     height: 100%
     color: #000
     text-align: left
+    background-color :#ffffff
     .top-bg
       position: absolute
       left: 0

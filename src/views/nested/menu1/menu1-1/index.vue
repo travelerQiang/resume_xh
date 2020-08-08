@@ -1,6 +1,5 @@
 <template>
   <div id="app">
-    <Aside class="aside"></Aside>
         <one></one>
   </div>
 </template>
