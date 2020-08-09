@@ -10,6 +10,11 @@
         <span class="text">PNG下载</span>
       </a>
     </div>
+    <div class="manager">
+      <a class="manager-item" href="javascript:void(0);" @click="styleSetting">
+        <span class="text">风格设置</span>
+      </a>
+    </div>
 <!--    <ul class="manager">-->
 <!--      <li class="manager-item" @click="templateSwitch">-->
 <!--        <i class="icon model"></i>-->
@@ -22,9 +27,9 @@
 <!--    </ul>-->
 
     <!--颜色选择器-->
-<!--    <color-picker v-show="false" id="colorPicker"-->
-<!--                  @colorPicked="colorPickedListener"-->
-<!--                  @colorPickerHide="colorPickerHideListener"></color-picker>-->
+    <color-picker v-show="false" id="colorPicker"
+                  @colorPicked="colorPickedListener"
+                 @colorPickerHide="colorPickerHideListener"></color-picker>
 
     <!--模板切换-->
 <!--    <template-switch v-show="false" id="templateSwitch"-->
@@ -61,7 +66,7 @@
           closeBtn: 0,
           shade: false,
           area: ['220px', '100%'],
-          offset: ['32px', '0']
+          offset: ['200px', '86%']
         });
       },
       // // 模板切换
